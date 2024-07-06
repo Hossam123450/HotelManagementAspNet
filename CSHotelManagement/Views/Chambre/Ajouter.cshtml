@@ -1,0 +1,45 @@
+﻿@model prepaControle.Models.Chambre;
+@{
+    ViewData["Title"] = "Chambre - Ajouter";
+}
+
+
+<h1>Chambre - Ajouter</h1>
+
+<form method="Post" asp-action="Ajouter">
+    <fieldset>
+        <legend>Données chambre</legend>
+        <div class="form-group row">
+            <label for="Num" class="col-sm-2 col-form-label">Num</label>
+            <div class="col-sm-10">
+                <input asp-for="Num" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Type" class="col-sm-2 col-form-label">Type</label>
+            <div class="col-sm-10">
+                <input asp-for="Type" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="NumEtage" class="col-sm-2 col-form-label">NumEtage</label>
+            <div class="col-sm-10">
+                <input asp-for="NumEtage" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="DateDebut" class="col-sm-2 col-form-label">DateDebut</label>
+            <div class="col-sm-10">
+                <input asp-for="DateDebut" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="DateFin" class="col-sm-2 col-form-label">DateFin</label>
+            <div class="col-sm-10">
+                <input asp-for="DateFin" class="form-control">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add</button>
+    </fieldset>
+</form>
